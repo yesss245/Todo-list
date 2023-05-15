@@ -3,36 +3,39 @@ import { Routes, Route, Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div ><h3 className="m-5 p-3 text-center" style={{backgroundColor:"#000",}}>
+    <div >
+      <h3 className="m-5 p-3 text-center" style={{backgroundColor:"#000",}}>
       <span style={{color:"yellow"}}>ToDo</span>
       <span style={{color:"white"}}>-</span>
       <span style={{color:"red"}}>List</span></h3>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container">
-          {/* <Link to="/" className="navbar-brand">
-            Todo List
-          </Link> */}
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to="Home" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
-                  Show Data
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/add" className="nav-link">
-                  Add Todo
-                </Link>
-              </li>
-            </ul>
+      <div className="m-5">
+        <nav className="navbar navbar-expand-md navbar-light bg-light" style={{backgroundColor:"#e3f2fd"}} >
+          <div className="container">
+            {/* <Link to="/" className="navbar-brand">
+              Todo List
+            </Link> */}
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link to="Home" className="nav-link active">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">
+                    Show Data
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/add" className="nav-link">
+                    Add Todo
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <div className="main">
         {/* Define all the routes */}
         <Routes>

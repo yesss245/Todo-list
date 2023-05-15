@@ -24,7 +24,7 @@ const TodoList = () => {
   };
 
   return (
-    <div>
+    <div  className='m-5'>
       <table className="table table-hover">
         <thead>
           <tr>
