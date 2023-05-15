@@ -33,7 +33,7 @@ const TodoList = () => {
             <th>Priority</th>
             <th>Status</th>
             <th>Edit</th>
-            <th>Delete</th>
+            <th>Deletee</th>
           </tr>
         </thead>
         <tbody>
